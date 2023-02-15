@@ -22,19 +22,27 @@
 </div>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logonav.png" alt="">
-            </a>
+
+    <div class="parent bg-dark p-3">
+      <div class="div1">
+        <img src="images/logonav.png" alt="" href="#">
+      </div>
+      <div class="div2">
+        <img src="images/telimg.png" alt=""> 387 4 817 667 / 387 4 066 450</div>
+      <div class="div3">
+        <img src="images/email.png" alt=""> administracion@precyt.com.ar</div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top justify-content-center">
+        <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav mx-auto p-1" style="color: black;">
                     <li class="nav-item">
-                        <a class="nav-link" href="#hero">Inicio</a>
+                        <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Quienes Somos</a>
@@ -43,13 +51,16 @@
                         <a class="nav-link" href="#services">Objetivos</a>
                     </li>
                     <li class="nav-item">
+                      <a class="nav-link" href="#portfolio">Galeria</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#team">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Galeria</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
+                        <a class="nav-link" href="/presupuesto.html">Presupuesto</a>
                     </li>
                 </ul>
             </div>
@@ -57,11 +68,73 @@
     </nav>
 
     <!-- HERO -->
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+  
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="images/hero2.jpg" class="d-block w-100 c-img" alt="Slide 1">
+          <div class="carousel-caption top-0 mt-5" style="text-align: left;">
+            <p class="mt-5 fs-3 text-uppercase fw-bolder">SEGURIDAD E HIGIENE Y MEDIO AMBIENTE</p>
+            <p class="display-1 fw-bolder text-capitalize mt-5">PRECYT</p>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img src="images/hero5.jpg" class="d-block w-100 c-img" alt="Slide 2">
+          <div class="carousel-caption top-0 mt-4" style="text-align: right;">
+            <p class="mt-5 fs-3 text-uppercase fw-bolder">Optimizamos recursos</p>
+            <p class="display-1 fw-bolder text-capitalize mt-5">MINERIA</p>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img src="images/hero4.jpg" class="d-block w-100 c-img" alt="Slide 3">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase fw-bolder">Excelencia en cada detalle</p>
+            <p class="display-1 fw-bolder text-capitalize mt-5">CALIDAD</p>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img src="images/hero1.webp" class="d-block w-100 c-img" alt="Slide 4">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase fw-bolder">integración de equipos de trabajo</p>
+            <p class="display-1 fw-bolder text-capitalize mt-5">FORTALECIMIENTO</p>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img src="images/hero3.jpg" class="d-block w-100 c-img" alt="Slide 5">
+          <div class="carousel-caption top-1 mt-4">
+            <p class="mt-5 fs-3 text-uppercase fw-bolder">responsabilidad con nuestros clientes</p>
+            <p class="display-1 fw-bolder text-capitalize mt-5">COMPROMISO</p>
+          </div>
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<!--
     <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
         <div class="container">
             <div class="row">
                 <div class="col-12 p-5 my-5">
-                    <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1 mb-5">bienvenido a precyt</h1>
+                    <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1 mb-5">precyt</h1>
                     <div data-aos="fade-up" data-aos-delay="50">
                         <a href="#contact" class="btn btn-brand me-2">CONTACTANOS</a>
                     </div>
@@ -75,19 +148,18 @@
             </div>
         </div>
     </section>
-
+--> 
     <!-- ABOUT -->
     <section id="about" class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
                     <div class="section-title">
-                        <h1 class="display-4 fw-semibold" style="color: black;">Quienes somos</h1>
-                        <div class="line"></div>
-                        <p>Somos un equipo conformado por profesionales especialistas en materia de Seguridad Industrial y Medio Ambiente</p>
+                        <h3> Profesionales capacitados, comprometidos y enfocados en satisfacer la necesidad de cada cliente</h3>
                     </div>
                 </div>
             </div>
+            <!--
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6" data-aos="fade-down" data-aos-delay="50">
                     <img src="images/about.png" alt="">
@@ -97,7 +169,7 @@
                     <p class="mt-3 mb-4">La misión de PRECYT es satisfacer las necesidades de las empresas y cuidar a su personal mediante el asesoramiento y apoyo constante, con el objetivo de mejorar el futuro de cada cliente. La empresa se compromete a ser transparente e integra y se esfuerza por proporcionar servicios de alta calidad y excelencia mediante la diversidad y la pasión de su equipo multidisciplinario, promoviendo la mejora continua e innovación en cada cliente.</p>
                     <h1>Visión</h1>
                     <p class="mt-3 mb-4">PRECYT busca brindar un servicio que satisfaga las necesidades inmediatas de sus clientes, ayudando en los procesos de cambio y mejora,  garantizando el bienestar del capital humano e institucional para crear un ambiente de trabajo seguro y convirtiendo la seguridad en una inversión.</p>
-                  
+                  -->
                     
                 </div>
             </div>
@@ -151,6 +223,42 @@
                         </div>
                         <h5 class="mt-4 mb-3">FORTALECER</h5>
                         <p>El vínculo y la integración de los equipos de trabajo</p><br><br>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-focus-3-fill"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">EFICACIA</h5>
+                        <p>Resultados efectivos, clientes satisfechos</p><br><br>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-lightbulb-fill"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">EFICIENCIA</h5>
+                        <p>Optimizamos recursos, maximizamos resultados</p><br><br>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-service-fill"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">COMPROMISO</h5>
+                        <p>Compromiso real con nuestros clientes</p><br><br>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-shield-check-fill"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">CALIDAD</h5>
+                        <p>Excelencia en cada detalle, calidad garantizada</p><br><br>
                     </div>
                 </div>
                 
@@ -277,6 +385,10 @@
     <!-- COUNTER -->
     <section id="counter" class="section-padding">
         <div class="container text-center">
+          <div class="section-title">
+            <h1 class="display-4 fw-semibold">Nuestra experiencia en números</h1>
+            <div class="line"></div>
+        </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
                     <h1 class="text-white display-4">125</h1>
@@ -695,7 +807,7 @@
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
-                        <h1 class="display-4 fw-semibold">Servicios</h1>
+                        <h1 class="display-4 fw-semibold" style="color:black;">Servicios</h1>
                         <div class="line"></div>
                     </div>
                 </div>
@@ -860,7 +972,7 @@
                         <h5 class="mb-0 text-white">SITIO</h5>
                         <div class="line"></div>
                         <ul>
-                            <li><a href="#hero">Inicio</a></li>
+                            <li><a href="#">Inicio</a></li>
                             <li><a href="#about">Quienes somos</a></li>
                             <li><a href="#services">Nuestros objetivos</a></li>
                             <li><a href="#team">Servicios</a></li>
